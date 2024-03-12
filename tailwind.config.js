@@ -11,7 +11,20 @@ module.exports = {
       container:{
         center:true,
         padding:'2rem'
+      },
+      backgroundImage:{
+        'iPhone15_Pro' :"url('images/iPhone15_Pro.jpg')",
+        'iPhone15' :"url('images/iPhone15.jpg')",
+
+      },
+      width:{
+        'FullPage':'100vw'
+      },
+      height:{
+        'i15Pro':'77vh',
+        'i15':'74vh'
       }
+
     },
   },
   plugins: [],

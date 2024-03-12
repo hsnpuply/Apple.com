@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -444,7 +446,11 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -494,7 +500,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -544,7 +550,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
+.container{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -552,117 +558,121 @@ video {
   padding-left: 2rem;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
+@media (min-width: 1536px){
+  .container{
     max-width: 1536px;
   }
 }
 
-.fixed {
+.iPhone15_Pro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 77vh;
+  width: 100vw;
+  background-image: url('images/iPhone15_Pro.jpg');
+}
+
+.iPhone15{
+  height: 74vh;
+  width: 100vw;
+  background-image: url('images/iPhone15.jpg');
+}
+
+.fixed{
   position: fixed;
 }
 
-.left-0 {
+.left-0{
   left: 0px;
 }
 
-.top-0 {
+.top-0{
   top: 0px;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.w-full {
+.w-full{
   width: 100%;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
+.items-center{
   align-items: center;
 }
 
-.justify-center {
+.justify-center{
   justify-content: center;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-10 {
+.gap-10{
   gap: 2.5rem;
 }
 
-.bg-header_bg {
+.gap-5{
+  gap: 1.25rem;
+}
+
+.bg-header_bg{
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.bg-lime-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-60 {
-  padding-top: 15rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
-}
-
-.pt-24 {
+.py-24{
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
-.text-color_links {
+.text-\[3\.5rem\]{
+  font-size: 3.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.text-color_links{
   color: #ffffffcc;
 }
