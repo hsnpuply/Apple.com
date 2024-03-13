@@ -12,13 +12,39 @@
 
 @layer components {
   .bg-iphones-pattern {
-    @apply object-cover bg-no-repeat top-center-text bg-center flex flex-col items-center text-white;
+    @apply object-cover bg-no-repeat  bg-center flex flex-col items-center text-center;
   }
   .iPhone15_Pro {
-    @apply w-FullPage h-i15Pro bg-iphones-pattern;
-    /* bg-[url('images/iPhone15_Pro.jpg')] */
+    @apply h-i15Pro bg-iphones-pattern bg-iPhone15_Pro  text-white;
   }
   .iPhone15 {
-    @apply w-FullPage h-i15 bg-iPhone15;
+    @apply h-i15 bg-iphones-pattern bg-iPhone15 text-black;
+  }
+  .watch {
+    @apply text-white flex items-end justify-center bg-watch_bg bg-center object-cover bg-no-repeat h-[80vh];
+  }
+  .watch-info {
+    @apply py-20 flex flex-col items-center gap-5;
+  }
+  .item-1 {
+    @apply bg-produc_item-1 items-center;
+  }
+  .item-2 {
+    @apply bg-produc_item-2;
+  }
+  .item-3 {
+    @apply bg-produc_item-3;
+  }
+  .item-4 {
+    @apply bg-produc_item-4;
+  }
+  .item-5 {
+    @apply bg-produc_item-5;
+  }
+  .item-6 {
+    @apply bg-produc_item-6;
+  }
+  .items {
+    @apply min-w-new_product-w min-h-new_product-h flex flex-col bg-center object-cover bg-no-repeat justify-center items-center;
   }
 }
