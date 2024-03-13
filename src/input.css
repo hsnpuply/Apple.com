@@ -27,7 +27,7 @@
     @apply py-20 flex flex-col items-center gap-5;
   }
   .item-1 {
-    @apply bg-produc_item-1 items-center;
+    @apply bg-produc_item-1;
   }
   .item-2 {
     @apply bg-produc_item-2;
@@ -45,6 +45,6 @@
     @apply bg-produc_item-6;
   }
   .items {
-    @apply min-w-new_product-w min-h-new_product-h flex flex-col bg-center object-cover bg-no-repeat justify-center items-center;
+    @apply min-w-new_product-w min-h-new_product-h flex flex-col bg-center object-cover bg-no-repeat justify-start items-center;
   }
 }

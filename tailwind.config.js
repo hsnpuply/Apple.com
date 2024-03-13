@@ -33,7 +33,10 @@ module.exports = {
       height:{
         'i15Pro':'77vh',
         'i15':'74vh',
-      }
+      },
+      gradientColorStops: {
+        "theme-gradient": ["#bf8bff", "#4b0082","#0000FF","#00FF00","#FFFF00","#FFA500"],
+      },
 
     },
   },
