@@ -4,8 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        header_bg:'#121212',
-        color_links:'#ffffffcc'
+        header_bg:'#121212bf',
+        color_links:'#ffffffcc',
+        footer_background:'#f5f5f9',
+        footer_border_color:'#00000029',
+        footer_text_color:'#0000008f',
+        footer_link_color:'#000000b8'
+
+
+
+
 
       },
       container:{
