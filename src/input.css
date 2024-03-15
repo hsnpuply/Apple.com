@@ -47,4 +47,38 @@
   .items {
     @apply min-w-new_product-w min-h-new_product-h flex flex-col bg-center object-cover bg-no-repeat justify-start items-center;
   }
+
+  /* .swiper-1 {
+    @apply bg-swiper-1 w-full h-full;
+  }
+
+  .swiper-2 {
+    @apply bg-swiper-2 w-full h-full;
+  }
+
+  .swiper-3 {
+    @apply bg-swiper-3 w-full h-full;
+  }
+
+  .swiper-4 {
+    @apply bg-swiper-4 w-full h-full;
+  }
+  .swiper-5 {
+    @apply bg-swiper-5;
+  }
+  .swiper-6 {
+    @apply bg-swiper-6;
+  }
+  .swiper-7 {
+    @apply bg-swiper-7;
+  }
+  .swiper-8 {
+    @apply bg-swiper-8;
+  }
+  .swiper-9 {
+    @apply bg-swiper-9;
+  }
+  .swiper-10 {
+    @apply bg-swiper-10;
+  } */
 }

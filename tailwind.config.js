@@ -23,6 +23,17 @@ module.exports = {
         'produc_item-5':"url('images/card.jpg')",
         'produc_item-6':"url('images/tradein.jpg')",
 
+        'swiper-1':"url('images/1_swiper.jpg')",
+        'swiper-2':"url('images/2_swiper.jpg')",
+        'swiper-3':"url('images/3_swiper.jpg')",
+        'swiper-4':"url('images/4_swiper.jpg')",
+        'swiper-5':"url('images/5_swiper.jpg')",
+        'swiper-6':"url('images/6_swiper.jpg')",
+        'swiper-7':"url('images/7_swiper.jpg')",
+        'swiper-8':"url('images/8_swiper.jpg')",
+        'swiper-9':"url('images/9_swiper.jpg')",
+        'swiper-10':"url('images/10_swiper.jpg')",
+
       },
       minWidth:{
         'new_product-w':'702px'
