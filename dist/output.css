@@ -588,6 +588,12 @@ body {
   }
 }
 
+.home-page_section a:hover,
+  .products-container a:hover{
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
 .iPhone15_Pro{
   display: flex;
   flex-direction: column;
@@ -781,6 +787,14 @@ hr{
   color: #000000b8;
 }
 
+#logo-svg:hover,
+  #shopping-svg:hover,
+  #search-svg:hover{
+  fill: #fff;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
 .fixed{
   position: fixed;
 }
@@ -829,40 +843,12 @@ hr{
   margin-top: 1rem;
 }
 
-.ml-auto{
-  margin-left: auto;
-}
-
-.mr-auto{
-  margin-right: auto;
-}
-
 .flex{
   display: flex;
 }
 
 .grid{
   display: grid;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-svh{
-  height: 100svh;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-auto{
-  height: auto;
 }
 
 .w-full{
@@ -950,29 +936,9 @@ hr{
   background-color: #121212bf;
 }
 
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-emerald-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 78 59 / var(--tw-bg-opacity));
-}
-
-.bg-lime-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(101 163 13 / var(--tw-bg-opacity));
-}
-
-.bg-orange-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-l{

@@ -11,6 +11,10 @@
 }
 
 @layer components {
+  .home-page_section a:hover,
+  .products-container a:hover {
+    @apply underline underline-offset-2;
+  }
   .bg-iphones-pattern {
     @apply object-cover bg-no-repeat  bg-center flex flex-col items-center text-center;
   }
@@ -80,5 +84,11 @@
   }
   .copyright {
     @apply text-footer_link_color;
+  }
+
+  #logo-svg:hover,
+  #shopping-svg:hover,
+  #search-svg:hover {
+    @apply fill-white duration-300 ease-linear;
   }
 }
