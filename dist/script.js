@@ -25,6 +25,8 @@ search_svg.addEventListener('mouseover',(e)=>{
     full_menu_preview.classList.add('active');
     full_menu.classList.add('active');
     main.classList.add('active');
+    body_content.classList.add('turn_of_scroll')
+
 
 });
 
@@ -37,6 +39,8 @@ shopping_svg.addEventListener('mouseover',(e)=>{
     full_menu_preview.classList.add('active');
     full_menu.classList.add('active');
     main.classList.add('active');
+    body_content.classList.add('turn_of_scroll')
+
 
 });
 // shopping_svg.addEventListener('mouseleave',(e)=>{
@@ -48,5 +52,7 @@ full_menu_preview.addEventListener('mouseleave',()=>{
     full_menu_preview.classList.remove('active');
     full_menu.classList.remove('active');
     main.classList.remove('active');
+    body_content.classList.remove('turn_of_scroll')
+
 
 })
