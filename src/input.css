@@ -91,4 +91,47 @@
   #search-svg:hover {
     @apply fill-white duration-300 ease-linear;
   }
+
+  /* test */
+  .full-menu-preview {
+    z-index: 99999999;
+    transition: all 0.3s ease-in-out;
+  }
+  .legal-footer-links li:not(:last-child) > a {
+    @apply after:content-['|'] relative after:absolute after:-right-3 after:-top-1;
+  }
+
+  .full-menu-preview.active {
+    @apply h-[45vh]  bg-black transition-[height] duration-1000 ease-in-out;
+  }
+
+  .full-menu.active {
+    @apply bg-black;
+  }
+  .main.active {
+    @apply blur-sm;
+  }
+  .turn_of_scroll {
+    @apply overflow-hidden;
+  }
+  /* .full-menu:hover {
+      @apply bg-black;
+    }
+
+    .full-menu:hover .full-menu-preview {
+      @apply h-[45vh] animate-pulse duration-1000 bg-black ease-in-out;
+    }
+
+    .classe_blur {
+      @apply bg-red-500;
+    } */
+
+  /* .full-menu-preview.active {
+    @apply h-[45vh] duration-1000 bg-black ease-in-out;
+  }
+   */
+
+  /* .full-menu-preview:hover {
+    @apply bg-red-700 text-sky-200 text-4xl;
+  } */
 }
