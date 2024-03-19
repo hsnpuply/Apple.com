@@ -56,7 +56,9 @@ module.exports = {
       gradientColorStops: {
         "theme-gradient": ["#bf8bff", "#4b0082","#0000FF","#00FF00","#FFFF00","#FFA500"],
       },
-
+      transitionProperty: {
+        'height': 'height',
+      }
     },
   },
   plugins: [],
