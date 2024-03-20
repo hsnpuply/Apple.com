@@ -64,7 +64,7 @@
                     </svg>
                 </a>
 
-                <nav class=" w-full ">
+                <nav class=" w-full hidden lg:block">
                     <ul class="navbar_links flex  items-center justify-between">
                         <li><a href="#">Store</a></li>
                         <li><a href="#">Mac</a></li>
@@ -79,28 +79,39 @@
                         <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
-                <!-- Search  -->
-                <a href="#" class="px-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="64px" fill="#ffffffcc"
-                        viewBox="0 0 15 44" id="search-svg">
-                        <path
-                            d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
-                        </path>
-                    </svg>
-                </a>
+                <!-- Quick Accesss SearchBox and Shopping Bag -->
+                <div class="quick-access-icons flex gap-4 items-center">
+                    <!-- Search  -->
+                    <a href="#" class="px-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="64px" fill="#ffffffcc"
+                            viewBox="0 0 15 44" id="search-svg">
+                            <path
+                                d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                            </path>
+                        </svg>
+                    </a>
 
-                <!-- Shopping bag -->
-                <a href="#">
-                    <svg height="64px" viewBox="0 0 14 44" width="23px" fill="#ffffffcc"
-                        xmlns="http://www.w3.org/2000/svg" id="shopping-svg">
-                        <path
-                            d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
-                        </path>
-                    </svg>
-                </a>
+                    <!-- Shopping bag -->
+                    <a href="#">
+                        <svg height="64px" viewBox="0 0 14 44" width="23px" fill="#ffffffcc"
+                            xmlns="http://www.w3.org/2000/svg" id="shopping-svg">
+                            <path
+                                d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                            </path>
+                        </svg>
+                    </a>
+
+
+                    <!-- HambergerMenu Button -->
+                    <div class="hamberger-menu flex flex-col gap-2 px-2 lg:hidden">
+                        <div class="hamberger-menu-line line-1 w-7 h-1 bg-gray-700"></div>
+                        <div class="hamberger-menu-line line-2 w-7 h-1 bg-gray-700"></div>
+                    </div>
+                </div>
+
             </div>
             <!-- Menu Preview -->
-            <div class="full-menu-preview  h-0 bg-header_bg  w-full  overflow-hidden  ">
+            <div class="full-menu-preview  h-0 bg-header_bg  w-full  overflow-hidden hidden lg:block  ">
                 <div class="container full-menu-preview-container py-8">
 
                 </div>
@@ -111,20 +122,20 @@
 
     </header>
     <main class="main">
-        <section class="home-page_section bg-emerald-300 flex flex-col gap-5">
+        <section class="home-page_section flex flex-col gap-5">
 
-            <div class="iPhone15_Pro py-24">
-                <h1 class="text-[3.5rem] font-medium">iPhone 15 Pro</h1>
-                <h2 class="text-[1.7rem]">Titanium. So strong. So light. So Pro.</h2>
-                <div class="about-links space-x-12 text-xl text-sky-600 mr-5 pt-2">
+            <div class="iPhone15_Pro py-28 flex flex-col gap-1 md:gap-2 ">
+                <h1 class="text-3xl md:text-4xl lg:text-[3.5rem] font-medium">iPhone 15 Pro</h1>
+                <h2 class="text-2xl md:text-3xl lg:text-[2.2rem]">Titanium. So strong. So light. So Pro.</h2>
+                <div class="about-links space-x-12 text-xl text-sky-600 mr-5 pt-3">
                     <a href="">Learn More ></a>
                     <a href="">Buy ></a>
                 </div>
             </div>
 
-            <div class="iPhone15 py-16">
-                <h1 class="text-[3.5rem] font-medium ">iPhone 15</h1>
-                <h2 class="text-[1.7rem]">New camera. New design. Newphoria.</h2>
+            <div class="iPhone15 py-16 flex flex-col gap-1 md:gap-2 ">
+                <h1 class="text-3xl md:text-4xl lg:text-[3.5rem] font-medium ">iPhone 15</h1>
+                <h2 class="text-2xl md:text-3xl lg:text-[2.2rem]">New camera. New design. Newphoria.</h2>
                 <div class="about-links space-x-12 text-xl text-sky-600 mr-5 pt-2">
                     <a href="">Learn More ></a>
                     <a href="">Buy ></a>
@@ -135,7 +146,8 @@
 
                 <div class="watch-info ">
                     <img src="/dist/images/watch.png" alt="" class="z-10 ">
-                    <h2 class="text-white text-2xl">Double tap. A magical new way to use Apple Watch.</h2>
+                    <h2 class="text-white text-lg md:text-xl lg:text-2xl">Double tap. A magical new way to use Apple
+                        Watch.</h2>
                     <div class="about-links space-x-6 text-xl text-sky-600 mr-5 pt-2">
                         <a href="" class="px-4 py-3 bg-white text-black rounded-3xl">Learn More </a>
                         <a href="" class="px-4 py-3 bg-white text-black rounded-3xl">Buy</a>
@@ -232,7 +244,7 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
                                     class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
                                 </span>
                                 You don't know Dick. </p>
@@ -246,10 +258,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
+                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Mystery
                                 </span>
-                                You don't know Dick. </p>
+                                Reality is a conspiarcy. </p>
 
                         </div>
 
@@ -261,10 +273,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
+                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Crime
                                 </span>
-                                You don't know Dick. </p>
+                                An Apple Original Film by Martin Maitune. </p>
 
                         </div>
                     </div>
@@ -275,10 +287,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
+                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Documentry
                                 </span>
-                                You don't know Dick. </p>
+                                The true story of the men who inspired Master of the Air. </p>
 
                         </div>
                     </div>
@@ -289,10 +301,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
+                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Drama
                                 </span>
-                                You don't know Dick. </p>
+                                He came from nothing. He conquere everything. </p>
 
                         </div>
                     </div>
@@ -303,10 +315,9 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
-                                </span>
-                                You don't know Dick. </p>
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4">
+
+                                Watch Messi, every club, and every match--live. </p>
 
                         </div>
                     </div>
@@ -317,10 +328,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
                                     class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
                                 </span>
-                                You don't know Dick. </p>
+                                Kindness makes a comeback. </p>
 
                         </div>
                     </div>
@@ -331,10 +342,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
+                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Show
                                 </span>
-                                You don't know Dick. </p>
+                                What is the most Successful Routine? </p>
 
                         </div>
                     </div>
@@ -345,10 +356,10 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
-                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4 font-bold"><span
+                                    class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Mystery
                                 </span>
-                                You don't know Dick. </p>
+                                Who is the btrayer. </p>
 
                         </div>
                     </div>
@@ -359,7 +370,7 @@
                                 class="flex items-center px-6 py-3 bg-white rounded-3xl text-black gap-4 font-semibold "><span>Stream
                                     Now </span><i class="fas fa-play-circle text-3xl"></i></a>
 
-                            <p class="text-2xl text-white"><span
+                            <p class="text-2xl text-black bg-white/45 rounded-3xl p-4"><span
                                     class="relative after:content-['•'] after:absolute after:right-1 after:text-lg after:top-1 pr-4 font-bold ">Comedy
                                 </span>
                                 You don't know Dick. </p>
@@ -625,7 +636,7 @@
 
             loop: true,
             autoplay: {
-                delay: 45000,
+                delay: 4500,
             },
 
 

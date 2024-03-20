@@ -50,8 +50,8 @@ module.exports = {
         'new_product-h':'580px'
       },
       height:{
-        'i15Pro':'77vh',
-        'i15':'74vh',
+        'i15Pro':'46rem',
+        'i15':'45rem',
       },
       gradientColorStops: {
         "theme-gradient": ["#bf8bff", "#4b0082","#0000FF","#00FF00","#FFFF00","#FFA500"],

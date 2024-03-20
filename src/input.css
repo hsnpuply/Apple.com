@@ -16,7 +16,7 @@
     @apply underline underline-offset-2;
   }
   .bg-iphones-pattern {
-    @apply object-cover bg-no-repeat  bg-center flex flex-col items-center text-center;
+    @apply object-contain bg-no-repeat  bg-center flex flex-col items-center text-center;
   }
   .iPhone15_Pro {
     @apply h-i15Pro bg-iphones-pattern bg-iPhone15_Pro  text-white;
@@ -25,7 +25,7 @@
     @apply h-i15 bg-iphones-pattern bg-iPhone15 text-black;
   }
   .watch {
-    @apply text-white flex items-end justify-center bg-watch_bg bg-center object-cover bg-no-repeat h-[80vh];
+    @apply text-white flex items-end justify-center bg-watch_bg bg-center object-cover bg-no-repeat h-[44rem];
   }
   .watch-info {
     @apply py-20 flex flex-col items-center gap-5;
@@ -114,24 +114,8 @@
   .turn_of_scroll {
     @apply overflow-hidden;
   }
-  /* .full-menu:hover {
-      @apply bg-black;
-    }
 
-    .full-menu:hover .full-menu-preview {
-      @apply h-[45vh] animate-pulse duration-1000 bg-black ease-in-out;
-    }
-
-    .classe_blur {
-      @apply bg-red-500;
-    } */
-
-  /* .full-menu-preview.active {
-    @apply h-[45vh] duration-1000 bg-black ease-in-out;
+  .full-menu-preview-container a:hover {
+    @apply underline underline-offset-2;
   }
-   */
-
-  /* .full-menu-preview:hover {
-    @apply bg-red-700 text-sky-200 text-4xl;
-  } */
 }

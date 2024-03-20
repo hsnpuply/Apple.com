@@ -600,10 +600,10 @@ body {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   text-align: center;
-  height: 77vh;
+  height: 46rem;
   background-image: url('images/iPhone15_Pro.jpg');
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -615,10 +615,10 @@ body {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   text-align: center;
-  height: 74vh;
+  height: 45rem;
   background-image: url('images/iPhone15.jpg');
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -626,7 +626,7 @@ body {
 
 .watch{
   display: flex;
-  height: 80vh;
+  height: 44rem;
   align-items: flex-end;
   justify-content: center;
   background-image: url('images/appleWatchHero.jpg');
@@ -837,26 +837,10 @@ hr{
   overflow: hidden;
 }
 
-/* .full-menu:hover {
-      @apply bg-black;
-    }
-
-    .full-menu:hover .full-menu-preview {
-      @apply h-[45vh] animate-pulse duration-1000 bg-black ease-in-out;
-    }
-
-    .classe_blur {
-      @apply bg-red-500;
-    } */
-
-/* .full-menu-preview.active {
-    @apply h-[45vh] duration-1000 bg-black ease-in-out;
-  }
-   */
-
-/* .full-menu-preview:hover {
-    @apply bg-red-700 text-sky-200 text-4xl;
-  } */
+.full-menu-preview-container a:hover{
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
 
 .fixed{
   position: fixed;
@@ -918,8 +902,20 @@ hr{
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-0{
   height: 0px;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .w-full{
@@ -1006,9 +1002,9 @@ hr{
   border-radius: 1.5rem;
 }
 
-.bg-emerald-300{
+.bg-gray-700{
   --tw-bg-opacity: 1;
-  background-color: rgb(110 231 183 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-header_bg{
@@ -1018,6 +1014,10 @@ hr{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-white\/45{
+  background-color: rgb(255 255 255 / 0.45);
 }
 
 .bg-gradient-to-l{
@@ -1044,9 +1044,18 @@ hr{
           background-clip: text;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4{
@@ -1064,9 +1073,9 @@ hr{
   padding-bottom: 4rem;
 }
 
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .py-3{
@@ -1099,6 +1108,10 @@ hr{
   padding-top: 0.5rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1116,14 +1129,6 @@ hr{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-\[1\.7rem\]{
-  font-size: 1.7rem;
-}
-
-.text-\[3\.5rem\]{
-  font-size: 3.5rem;
 }
 
 .text-lg{
@@ -1207,8 +1212,50 @@ hr{
   content: var(--tw-content);
 }
 
+@media (min-width: 768px){
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-\[2\.2rem\]{
+    font-size: 2.2rem;
+  }
+
+  .lg\:text-\[3\.5rem\]{
+    font-size: 3.5rem;
   }
 }
