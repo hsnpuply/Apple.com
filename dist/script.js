@@ -6,8 +6,44 @@ const shopping_svg = document.querySelector('#shopping-svg');
 const main = document.querySelector('.main');
 const body_content = document.querySelector('.body-content');
 const full_menu_preview_container = document.querySelector('.full-menu-preview-container');
+const hamberger_menu = document.querySelector('#hamberger-menu');
+const iPhone15_Pro = document.querySelector('#iPhone15_Pro');
+const h3_footer_link = document.querySelectorAll('.h3-footer-link');
+const footer_links_col_ul = document.querySelectorAll('.footer-links-col ul');
 
 
+
+// Make iPhone 15 pro Background Change if the innerWidth is Larger or smaller than 1024
+
+// initial bacgkround Set based on Screen Width
+iPhone15_Pro.style.backgroundImage = innerWidth < 830
+? `url('../dist/images/iPhone15Pro-mobile-ver.jpg')`
+: `url('../dist/images/iPhone15_Pro.jpg')`;
+
+// when resize background will change
+window.addEventListener('resize',()=>{
+    iPhone15_Pro.style.backgroundImage = innerWidth < 830
+    ? `url('../dist/images/iPhone15Pro-mobile-ver.jpg')`
+    : `url('../dist/images/iPhone15_Pro.jpg')`;
+})
+
+
+if(innerWidth < 1024){
+    h3_footer_link.forEach((e,i)=>{
+        e.addEventListener('click',()=>{
+            footer_links_col_ul[i].classList.toggle('active')
+        })
+    })
+}
+
+// footer_links_col_ul.forEach((e,i)=>{
+//     e.style.background='red',
+//     e.style.height='22rem'
+// })
+
+
+
+if(innerWidth > 1024){
 // Add classes for sub menu Ui
 function menuClasses(){
         full_menu_preview.classList.add('active');
@@ -255,4 +291,7 @@ function watch(){
 
         `
     )
+}
+
+
 }

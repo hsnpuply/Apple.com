@@ -598,39 +598,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: contain;
-     object-fit: contain;
   text-align: center;
-  height: 46rem;
-  background-image: url('images/iPhone15_Pro.jpg');
+  height: 34rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .iPhone15_Pro{
+    height: 46rem;
+  }
 }
 
 .iPhone15{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: contain;
-     object-fit: contain;
   text-align: center;
-  height: 45rem;
+  height: 32rem;
   background-image: url('images/iPhone15.jpg');
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px){
+  .iPhone15{
+    height: 45rem;
+  }
+}
+
 .watch{
   display: flex;
-  height: 44rem;
+  height: 32rem;
   align-items: flex-end;
   justify-content: center;
   background-image: url('images/appleWatchHero.jpg');
-  background-position: center;
+  background-position: 65%;
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
@@ -638,13 +647,27 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px){
+  .watch{
+    height: 44rem;
+    background-position: center;
+  }
+}
+
 .watch-info{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px){
+  .watch-info{
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+  }
 }
 
 .item-1{
@@ -673,15 +696,13 @@ body {
 
 .items{
   display: flex;
-  min-height: 580px;
-  min-width: 702px;
+  min-height: 34rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 /* footer*/
@@ -842,6 +863,25 @@ hr{
   text-underline-offset: 2px;
 }
 
+.footer-links-col ul{
+  height: 0px;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px){
+  .footer-links-col ul{
+    height: auto;
+  }
+}
+
+ul.active{
+  height: 20rem;
+  max-height: 22rem;
+  transition-property: height;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}
+
 .fixed{
   position: fixed;
 }
@@ -862,8 +902,8 @@ hr{
   left: 0px;
 }
 
-.left-14{
-  left: 3.5rem;
+.left-6{
+  left: 1.5rem;
 }
 
 .top-0{
@@ -890,8 +930,8 @@ hr{
   margin-top: 5rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .flex{
@@ -920,6 +960,23 @@ hr{
 
 .w-full{
   width: 100%;
+}
+
+.min-w-32{
+  min-width: 8rem;
+}
+
+.rotate-\[90deg\]{
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-1{
@@ -970,6 +1027,10 @@ hr{
   gap: 7rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -1002,9 +1063,17 @@ hr{
   border-radius: 1.5rem;
 }
 
-.bg-gray-700{
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-b-footer_border_color{
+  border-bottom-color: #00000029;
+}
+
+.bg-\[\#434344\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(67 67 68 / var(--tw-bg-opacity));
 }
 
 .bg-header_bg{
@@ -1044,6 +1113,26 @@ hr{
           background-clip: text;
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
+.object-left{
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-left-top{
+  -o-object-position: left top;
+     object-position: left top;
+}
+
+.object-right{
+  -o-object-position: right;
+     object-position: right;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -1068,14 +1157,14 @@ hr{
   padding-right: 1.5rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.py-28{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-3{
@@ -1092,6 +1181,10 @@ hr{
   padding-bottom: 3rem;
 }
 
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
 .pr-4{
   padding-right: 1rem;
 }
@@ -1100,8 +1193,8 @@ hr{
   padding-top: 0px;
 }
 
-.pt-12{
-  padding-top: 3rem;
+.pt-1{
+  padding-top: 0.25rem;
 }
 
 .pt-2{
@@ -1110,6 +1203,10 @@ hr{
 
 .pt-3{
   padding-top: 0.75rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-center{
@@ -1158,6 +1255,11 @@ hr{
   font-weight: 600;
 }
 
+.text-\[\#3b3b3b\]{
+  --tw-text-opacity: 1;
+  color: rgb(59 59 59 / var(--tw-text-opacity));
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1186,6 +1288,60 @@ hr{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition-\[height\]{
+  transition-property: height;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+@media (min-width: 1024px){
+  .lg\:container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @media (min-width: 640px){
+    .lg\:container{
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px){
+    .lg\:container{
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .lg\:container{
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px){
+    .lg\:container{
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px){
+    .lg\:container{
+      max-width: 1536px;
+    }
+  }
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1212,9 +1368,35 @@ hr{
   content: var(--tw-content);
 }
 
+.hover\:rotate-\[270deg\]:hover{
+  --tw-rotate: 270deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:h-\[22rem\]{
+  height: 22rem;
+}
+
 @media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:gap-2{
     gap: 0.5rem;
+  }
+
+  .md\:text-center{
+    text-align: center;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-3xl{
@@ -1222,9 +1404,9 @@ hr{
     line-height: 2.25rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-xl{
@@ -1234,6 +1416,10 @@ hr{
 }
 
 @media (min-width: 1024px){
+  .lg\:left-14{
+    left: 3.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1242,8 +1428,54 @@ hr{
     display: none;
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lg\:cursor-auto{
+    cursor: auto;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:gap-4{
+    gap: 1rem;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .lg\:border-0{
+    border-width: 0px;
+  }
+
+  .lg\:object-center{
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:text-2xl{
@@ -1251,11 +1483,28 @@ hr{
     line-height: 2rem;
   }
 
-  .lg\:text-\[2\.2rem\]{
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:text-\[2\.2rem\]{
     font-size: 2.2rem;
   }
 
-  .lg\:text-\[3\.5rem\]{
+  .xl\:text-\[3\.5rem\]{
     font-size: 3.5rem;
   }
 }

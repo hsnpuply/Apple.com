@@ -21,7 +21,6 @@ module.exports = {
         padding:'2rem'
       },
       backgroundImage:{
-        'iPhone15_Pro' :"url('images/iPhone15_Pro.jpg')",
         'iPhone15' :"url('images/iPhone15.jpg')",
         'watch_bg':"url('images/appleWatchHero.jpg')",
         'produc_item-1':"url('images/visionPro.jpg')",
@@ -52,12 +51,17 @@ module.exports = {
       height:{
         'i15Pro':'46rem',
         'i15':'45rem',
+        'watch':'44rem',
+
       },
       gradientColorStops: {
         "theme-gradient": ["#bf8bff", "#4b0082","#0000FF","#00FF00","#FFFF00","#FFA500"],
       },
       transitionProperty: {
         'height': 'height',
+      },
+      padding:{
+        '18': '4.3rem',
       }
     },
   },

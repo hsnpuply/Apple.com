@@ -16,19 +16,19 @@
     @apply underline underline-offset-2;
   }
   .bg-iphones-pattern {
-    @apply object-contain bg-no-repeat  bg-center flex flex-col items-center text-center;
+    @apply bg-cover bg-no-repeat  bg-center  flex flex-col items-center text-center;
   }
   .iPhone15_Pro {
-    @apply h-i15Pro bg-iphones-pattern bg-iPhone15_Pro  text-white;
+    @apply h-[34rem] lg:h-i15Pro bg-iphones-pattern  text-white;
   }
   .iPhone15 {
-    @apply h-i15 bg-iphones-pattern bg-iPhone15 text-black;
+    @apply h-[32rem] lg:h-i15 bg-iphones-pattern bg-iPhone15 text-black;
   }
   .watch {
-    @apply text-white flex items-end justify-center bg-watch_bg bg-center object-cover bg-no-repeat h-[44rem];
+    @apply h-[32rem] lg:h-watch  text-white flex items-end justify-center bg-watch_bg lg:bg-center bg-[65%] object-cover bg-no-repeat;
   }
   .watch-info {
-    @apply py-20 flex flex-col items-center gap-5;
+    @apply py-12 lg:py-18 flex flex-col items-center gap-5;
   }
   .item-1 {
     @apply bg-produc_item-1;
@@ -49,7 +49,7 @@
     @apply bg-produc_item-6;
   }
   .items {
-    @apply min-w-new_product-w min-h-new_product-h flex flex-col bg-center object-cover bg-no-repeat justify-start items-center;
+    @apply min-h-[34rem] flex flex-col bg-center  bg-cover  bg-no-repeat justify-start items-center;
   }
 
   /* footer*/
@@ -117,5 +117,13 @@
 
   .full-menu-preview-container a:hover {
     @apply underline underline-offset-2;
+  }
+
+  .footer-links-col ul {
+    @apply h-0 lg:h-auto  overflow-hidden;
+  }
+
+  ul.active {
+    @apply h-[20rem] max-h-[22rem] transition-[height] duration-1000;
   }
 }
