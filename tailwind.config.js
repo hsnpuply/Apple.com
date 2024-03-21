@@ -59,6 +59,7 @@ module.exports = {
       },
       transitionProperty: {
         'height': 'height',
+        'max-height': 'max-height',
       },
       padding:{
         '18': '4.3rem',

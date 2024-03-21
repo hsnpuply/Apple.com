@@ -120,10 +120,10 @@
   }
 
   .footer-links-col ul {
-    @apply h-0 lg:h-auto  overflow-hidden;
+    @apply -translate-y-8  lg:translate-y-0 lg:scale-y-100 h-0 lg:h-auto overflow-hidden transition-transform !duration-[700ms] ease-in-out;
   }
 
   ul.active {
-    @apply h-[20rem] max-h-[22rem] transition-[height] duration-1000;
+    @apply translate-y-0 scale-y-100 origin-top-right pb-4 h-auto transition-transform !duration-[700ms] ease-in-out;
   }
 }

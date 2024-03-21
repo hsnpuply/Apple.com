@@ -865,21 +865,33 @@ hr{
 
 .footer-links-col ul{
   height: 0px;
+  --tw-translate-y: -2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   overflow: hidden;
+  transition-property: transform;
+  transition-duration: 700ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 1024px){
   .footer-links-col ul{
     height: auto;
+    --tw-translate-y: 0px;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
 ul.active{
-  height: 20rem;
-  max-height: 22rem;
-  transition-property: height;
+  height: auto;
+  transform-origin: top right;
+  --tw-translate-y: 0px;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  padding-bottom: 1rem;
+  transition-property: transform;
+  transition-duration: 700ms !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
 }
 
 .fixed{
