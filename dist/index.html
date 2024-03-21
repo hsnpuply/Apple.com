@@ -29,10 +29,6 @@
         }
 
         .swiper-slide img {
-            /* width: 400px;
-            min-width: 200px;
-            height: auto;
-            min-height: 400px; */
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -57,7 +53,7 @@
     <!-- Header -->
     <header class="header-section  bg-header_bg text-color_links fixed text-xs  top-0 left-0 w-full  z-20 ">
         <div class="full-menu relative flex flex-col">
-            <div class="lg:container  flex items-center justify-between gap-10 group px-4 lg:px-0">
+            <div class="lg:container  flex items-center justify-between gap-10 group px-4 ">
                 <!-- Logo -->
                 <a href="#" id="logo-link">
                     <svg height="64" viewBox="0 0 14 44" width="23" fill="#ffffffcc" xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +103,7 @@
 
 
                     <!-- HambergerMenu Button -->
-                    <div class="hamberger-menu flex flex-col gap-2 px-2 lg:hidden cursor-pointer" id="hamberger-menu">
+                    <div class="hamberger-menu flex flex-col gap-2 px-2 lg:hidden cursor-pointer " id="hamberger-menu">
                         <div class="hamberger-menu-line line-1 w-7 h-1 bg-[#434344]"></div>
                         <div class="hamberger-menu-line line-2 w-7 h-1 bg-[#434344]"></div>
                     </div>
@@ -121,7 +117,84 @@
                 </div>
             </div>
 
-        </div>
+            <!-- mobile Full Menu  -->
+            <div class="mobile-full-menu bg-black absolute top-0 left-0 w-full h-0 overflow-hidden transition-all duration-700"
+                id="mobile-full-menu">
+                <div class="mobile-full-menu-container pl-12 pr-8 pt-20 relative">
+                    <div class="close-mobile-menu absolute top-6 right-9 cursor-pointer" id="close-mobile-menu-btn">
+                        <span class="text-2xl">X</span>
+                    </div>
+                    <div class="mobile-menu-ul ">
+                        <nav>
+                            <ul class="flex flex-col items-start text-4xl font-bold gap-4 ">
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Store</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Mac</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">iPad</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">iPhone</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Watch</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Vision</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">TV & Home</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Entertaiment</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Accesesories</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                                <li class="flex items-center justify-between w-full">
+                                    <a href="#" class="hover:text-white peer">Support</a>
+                                    <span class="opacity-0 peer-hover:opacity-100 duration-300 ease-in"><i
+                                            class="fas fa-angle-right text-4xl"></i></span>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                </div>
+
+            </div>
 
 
     </header>
@@ -403,7 +476,7 @@
 
         <!-- footer -->
         <footer class="footer-section">
-            <div class="container  ">
+            <div class="lg:container px-5  ">
                 <div class="rules">
                     <p>1. Trade-in values will vary based on the condition, year, and configuration of your eligible
                         trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to
@@ -653,7 +726,7 @@
 
             </div>
 
-            <div class="apple-closer-shops container mt-10">
+            <div class="apple-closer-shops lg:container mt-10 px-5">
                 <p>More ways to shop: <a href="#" class=""> Find an Apple
                         Store</a> or <a href="#">other retailer</a> near you.
                     Or call 1-800-MY-APPLE.
@@ -662,15 +735,16 @@
             </div>
 
 
-            <div class="copyright-section flex flex-col items-start justify-start container">
+            <div class="copyright-section flex flex-col items-start justify-start lg:container px-5">
 
-                <div class="copyright flex items-center justify-between w-full">
+                <div
+                    class="copyright flex items-start lg:items-center pt-2 gap-3 lg:gap-0 justify-between w-full flex-col-reverse lg:flex-row">
                     <span>Copyright © 2024 Apple Inc. All rights reserved.</span>
-                    <a href="#">United States</a>
+                    <a href="#" class="font-medium ">United States</a>
                 </div>
 
-                <div class="legal-footer-links ">
-                    <ul class=" flex gap-4  items-center">
+                <div class="legal-footer-links pt-2 ">
+                    <ul class=" flex flex-wrap gap-x-4 items-center">
                         <li><a href="#" class="">Privacy
                                 Policy</a></li>
                         <li><a href="#" class="">Term of

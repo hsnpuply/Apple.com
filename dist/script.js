@@ -6,10 +6,31 @@ const shopping_svg = document.querySelector('#shopping-svg');
 const main = document.querySelector('.main');
 const body_content = document.querySelector('.body-content');
 const full_menu_preview_container = document.querySelector('.full-menu-preview-container');
-const hamberger_menu = document.querySelector('#hamberger-menu');
 const iPhone15_Pro = document.querySelector('#iPhone15_Pro');
+
 const h3_footer_link = document.querySelectorAll('.h3-footer-link');
 const footer_links_col_ul = document.querySelectorAll('.footer-links-col ul');
+
+const hamberger_menu = document.querySelector('#hamberger-menu');
+const close_mobile_menu_btn = document.querySelector('#close-mobile-menu-btn');
+const mobile_full_menu = document.querySelector('#mobile-full-menu');
+
+// closing mobile Menu screen
+close_mobile_menu_btn.addEventListener('click',()=>{
+    mobile_full_menu.classList.remove('h-screen');
+    mobile_full_menu.classList.add('h-0','opacity-0','overflow-hidden');
+    close_mobile_menu_btn.classList.add('opacity-0')
+    body_content.classList.remove('overflow-hidden');
+
+})
+
+hamberger_menu.addEventListener('click',()=>{
+    mobile_full_menu.classList.remove('h-0','opacity-0','overflow-hidden');
+    mobile_full_menu.classList.add('h-screen','opacity-100','overflow-hidden');
+    close_mobile_menu_btn.classList.remove('opacity-0')
+    body_content.classList.add('overflow-hidden');
+
+})
 
 
 
@@ -49,6 +70,7 @@ function menuClasses(){
         full_menu_preview.classList.add('active');
         full_menu.classList.add('active');
         main.classList.add('active');
+        // turning off the scroll for more focus on Sub-Menu
         body_content.classList.add('turn_of_scroll')
 }
 

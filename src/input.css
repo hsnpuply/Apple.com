@@ -61,7 +61,7 @@
   }
 
   hr {
-    @apply container h-px my-8 bg-gray-500 border-0;
+    @apply hidden lg:block lg:container h-px my-8 bg-gray-500 border-0;
   }
 
   .rules p > a {
@@ -90,6 +90,10 @@
   #shopping-svg:hover,
   #search-svg:hover {
     @apply fill-white duration-300 ease-linear;
+  }
+
+  #close-mobile-menu-btn:hover {
+    @apply text-white duration-500 ease-in;
   }
 
   /* test */
