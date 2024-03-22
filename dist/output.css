@@ -850,11 +850,11 @@ hr{
 }
 
 .full-menu-preview.active{
-  height: auto;
+  height: 23rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   transition-property: height;
-  transition-duration: 150ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1106,16 +1106,8 @@ ul.active{
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-auto{
-  overflow: auto;
-}
-
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-scroll{
-  overflow: scroll;
 }
 
 .rounded-3xl{
@@ -1130,14 +1122,14 @@ ul.active{
   border-bottom-color: #00000029;
 }
 
-.bg-\[\#434344\]{
+.bg-\[\#161617\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(67 67 68 / var(--tw-bg-opacity));
+  background-color: rgb(22 22 23 / var(--tw-bg-opacity));
 }
 
-.bg-black{
+.bg-\[\#8a8888\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(138 136 136 / var(--tw-bg-opacity));
 }
 
 .bg-header_bg{
@@ -1151,6 +1143,11 @@ ul.active{
 
 .bg-white\/45{
   background-color: rgb(255 255 255 / 0.45);
+}
+
+.bg-emerald-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-l{
@@ -1274,12 +1271,12 @@ ul.active{
   padding-top: 0.25rem;
 }
 
-.pt-18{
-  padding-top: 4.3rem;
-}
-
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pt-3{
@@ -1288,10 +1285,6 @@ ul.active{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-20{
-  padding-top: 5rem;
 }
 
 .text-center{
@@ -1604,6 +1597,11 @@ ul.active{
   .lg\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:text-2xl{

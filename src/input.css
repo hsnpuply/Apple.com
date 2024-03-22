@@ -106,7 +106,7 @@
   }
 
   .full-menu-preview.active {
-    @apply h-auto  bg-black transition-height ease-in-out;
+    @apply h-[23rem]  bg-black transition-height ease-in-out duration-500;
   }
 
   .full-menu.active {
