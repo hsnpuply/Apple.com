@@ -12,9 +12,6 @@ module.exports = {
         footer_link_color:'#000000b8'
 
 
-
-
-
       },
       container:{
         center:true,

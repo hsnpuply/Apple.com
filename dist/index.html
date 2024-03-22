@@ -14,46 +14,16 @@
         integrity="sha512-YVm6dLGBSj6KG3uUb1L5m25JXXYrd9yQ1P7RKDSstzYiPxI2vYLCCGyfrlXw3YcN/EM3UJ/IAqsCmfdc6pk/Tg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .swiper {
-            width: 100%;
-            height: 40rem;
-        }
 
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .swiper-pagination-bullet {
-            width: .9rem;
-            height: .9rem;
-            bottom: 3rem;
-            left: 2rem;
-            background-color: #727171;
-            opacity: 1;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: #2c2b2b;
-        }
     </style>
 </head>
 
 <body class="body-content">
     <!-- Header -->
-    <header class="header-section  bg-header_bg text-color_links fixed text-xs  top-0 left-0 w-full  z-20 ">
+    <header class="header-section ">
         <div class="full-menu relative flex flex-col">
-            <div class="lg:container  flex items-center justify-between gap-10 group px-4 ">
+
+            <div class="full-menu-container lg:container    ">
                 <!-- Logo -->
                 <a href="#" id="logo-link">
                     <svg height="64" viewBox="0 0 14 44" width="23" fill="#ffffffcc" xmlns="http://www.w3.org/2000/svg"
@@ -495,11 +465,10 @@
                         trade-in transaction for any reason. More details are available from Apple’s trade-in partner
                         for
                         trade-in and recycling of eligible devices. Restrictions and limitations may apply.</p>
-                    <br>
 
-                    <p>Available in the U.S. on <a href="#">apple.com</a>, in the Apple Store app, and at Apple Stores.
+                    <p class="pt-2">Available in the U.S. on <a href="#">apple.com</a>, in the Apple Store app, and at
+                        Apple Stores.
                     </p>
-                    <br>
 
                     <p>To access and use all Apple Card features and products available only to Apple Card users, you
                         must
@@ -507,23 +476,21 @@
                         iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in
                         the
                         United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
-                    <br>
 
-                    <p>If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions
+                    <p class="pt-2">If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923
+                        with questions
                         about
-                        Apple Card.</p><br>
+                        Apple Card.</p>
 
-                    <p>Learn more about how Apple Card applications are evaluated at <a
+                    <p class="pt-2">Learn more about how Apple Card applications are evaluated at <a
                             href="#">support.apple.com/kb/HT209218.
                         </a></p>
-                    <br>
-
-                    <p>A subscription is required for Apple TV+.</p>
+                    <p class="pt-1">A subscription is required for Apple TV+.</p>
                 </div>
 
                 <hr class="">
 
-                <div class="footers-links flex  justify-between items-start flex-col lg:flex-row ">
+                <div class="footers-links flex  justify-between items-start flex-col lg:flex-row mt-4 lg:mt-0  ">
                     <div class="footer-links-1 footer-links-col flex flex-col lg:gap-5 w-full     ">
                         <div
                             class="shop-learn flex flex-col  gap-1 border-b-2 border-b-footer_border_color lg:border-0  ">
@@ -533,7 +500,6 @@
                                 <p class="rotate-[90deg] hover:rotate-[270deg] duration-500 lg:hidden ">></p>
                             </div>
                             <ul class=" ">
-                                <!-- group-hover:h-[22rem] transition-[height] duration-1000 -->
                                 <li><a href="#">Store</a></li>
                                 <li><a href="#">Mac</a></li>
                                 <li><a href="#">iPad</a></li>

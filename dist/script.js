@@ -58,7 +58,7 @@ if(innerWidth < 1024){
 }
 
 
-window.addEventListener('resize',()=>{
+
 
 if(innerWidth > 1024){
     // Add classes for sub menu Ui
@@ -313,4 +313,3 @@ if(innerWidth > 1024){
 
 
     }
-})
