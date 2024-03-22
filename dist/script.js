@@ -10,6 +10,7 @@ const iPhone15_Pro = document.querySelector('#iPhone15_Pro');
 
 const h3_footer_link = document.querySelectorAll('.h3-footer-link');
 const footer_links_col_ul = document.querySelectorAll('.footer-links-col ul');
+const arrow_footer = document.querySelectorAll('.arrow-footer');
 
 const hamberger_menu = document.querySelector('#hamberger-menu');
 const close_mobile_menu_btn = document.querySelector('#close-mobile-menu-btn');
@@ -53,6 +54,7 @@ if(innerWidth < 1024){
     h3_footer_link.forEach((e,i)=>{
         e.addEventListener('click',()=>{
             footer_links_col_ul[i].classList.toggle('active')
+            arrow_footer[i].classList.toggle('active')
         })
     })
 }

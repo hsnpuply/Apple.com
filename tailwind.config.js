@@ -9,7 +9,9 @@ module.exports = {
         footer_background:'#f5f5f9',
         footer_border_color:'#00000029',
         footer_text_color:'#0000008f',
-        footer_link_color:'#000000b8'
+        footer_link_color:'#000000b8',
+        hamberger_color:'#8a8888',
+        semi_dark_black:'#161617'
 
 
       },
@@ -49,6 +51,7 @@ module.exports = {
         'i15Pro':'46rem',
         'i15':'45rem',
         'watch':'44rem',
+        '23':'23rem'
 
       },
       gradientColorStops: {
@@ -60,6 +63,9 @@ module.exports = {
       },
       padding:{
         '18': '4.3rem',
+      },
+      zIndex:{
+        '999':'999'
       }
     },
   },
